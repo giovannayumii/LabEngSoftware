@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo de relogio com JavaScript</title>
+    </head>
+    <body onload="startTime()">
+        <p id="relogio"></p>
+        <script>
+        function startTime() {
+        const date = new Date();
+        document.getElementById("relogio").innerHTML = date.toLocaleTimeString();
+        setTimeout(function() {startTime()}, 1000);
+        }
+        </script>
+    </body>
+</html>
