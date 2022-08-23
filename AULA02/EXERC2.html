@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Exemplo de relogio com JavaScript</title>
+        <title>Hora Atual/segundos</title>
     </head>
     <body onload="startTime()">
         <p id="relogio"></p>
         <script>
         function startTime() {
-        const date = new Date();
-        document.getElementById("relogio").innerHTML = date.toLocaleTimeString();
-        setTimeout(function() {startTime()}, 1000);
+            const date = new Date();
+            document.getElementById("relogio").innerHTML = date.toLocaleTimeString();
+            setTimeout(function() {startTime()}, 
+            1000);
         }
         </script>
     </body>
