@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exemplo JavaScript VALIDAR</title>
+    <script type="text/javascript">
+        function Validar(){
+        var nome = document.getElementById('nome').value;
+        if(nome.length == 0){
+            alert("Preencha o campo nome");
+            document.getElementById('nome').focus();
+            return false; //obriga preencher campo nome
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="#" method="post" onSubmit="return Validar()">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome">
+        <input type="submit">
+    </form>
+</body>
+</html>
