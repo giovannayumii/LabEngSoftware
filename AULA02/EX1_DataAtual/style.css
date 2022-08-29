@@ -1,0 +1,15 @@
+*{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);/*alpha é a transparencia  1 é o maximo*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 50px; /*distancia dos elementos e da borda*/
+    font-size: 70px;
+    color:white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 80%;
+}
