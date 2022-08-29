@@ -1,0 +1,53 @@
+*{
+    font-family: 'Oxanium', cursive;
+}
+body {
+    text-align: center;
+    margin-top: 5%;
+    background: linear-gradient(to bottom, #f7f2ca, #fff);
+    min-height: 100vh;
+}
+
+.ultimoResultado 
+{
+    color: white;
+    padding: 3px;
+}
+
+.campoPalpite{
+    width:10%;
+    padding:1%;
+    border: 1px solid #000;
+    border-radius:5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+}
+
+.envioPalpite{
+    width: 20%;
+    padding:1%;
+    border: 1px solid #000;
+    border-radius:5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: 1.5px 2px 0 #222, 3px 4px 0 #000;
+}
+.envioPalpite:active{
+    /*background-color: red;*/
+    box-shadow: inset -4px 4px 0 #222; /* "afunda o botão" */
+    font-size: 0.9ren;
+}
+.botaoReinicio{
+    width:30%;
+    padding:1%;
+    border: 1px solid #000;
+    border-radius:5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: 2px 3px 0 #222, 4px 6px 0 #000;
+
+}
