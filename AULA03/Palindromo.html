@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./script.js">
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="script.js" async></script>
 
     <title>PALINDROMO </title>
 </head>
-<body>
-    <p>Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a propriedade de poder ser lida
-         tanto da direita para a esquerda como da esquerda para a direita.</p>
-    <h2>É UM PALINDROMO OU NÃO?</h2>
-    
-    <form class="form" type="search">
-        <input
-            placeholder="Digite uma palavra ou frase"
-            required
-        />
-        <input type="submit" value="Enviar" class="enviar">
+<body>    
+    <form>
+        <h1 id="titulo">Palíndromo</h1>
+		<h3>Um palíndromo é uma palavra ou frase que pode ser lida no seu sentido normal, da esquerda para a direita, 
+            bem como no sentido contrário, da direita para a esquerda, sem que haja mudança nas palavras que a formam 
+            e no seu significado.</h3>
+        <h2>É UM PALÍNDROMO OU NÃO?</h2>
+        <input type="text" placeholder="Texto" id="texto" name="texto"></input>
+        <button type="submit" id="verificar">Verificar</button>
     </form>
  
 </body>
