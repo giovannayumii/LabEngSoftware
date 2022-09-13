@@ -6,23 +6,46 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            font-family: arial;
+            font-size: 30px;
+            text-align: center;
+        }
+        .cabecalho {
+            text-align: center;
+            font-family: arial;
+            font-size: 60px;
+        }
+        h1{
+            color: red;
+            text-align: center;
+            font-family: arial;
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+ 
+    </style>
+
 </head>
 <body>
     <div id="root"></div>
-    <h2>Venha estudar na <h1> F A T E C</h1></h2>;
+    <h2>Venha estudar na <h1> F  A  T  E  C</h1></h2>
 
     <script type="text/babel">
-       function typeWrite(element){
-        const texto = element.innerHTML.split('');
-        element.innerHTML = '';
-        texto.forEach((letra, i) => {
-            setTimeout(() => element.innerHTML += letra, 75 * i);
-        });
-       }
-       const frase2 = document.querySelector('h2');
-       typeWrite(frase2);
-       const frase1 = document.querySelector('h1');
-       typeWrite(frase1);
-     </script>
+        function typeWrite(element){
+         const texto = element.innerHTML.split('');
+         element.innerHTML = '';
+         texto.forEach((letra, i) => {
+             setTimeout(() => element.innerHTML += letra, 75 * i);
+         });
+        }
+        const frase1= document.querySelector('h2');
+        typeWrite(frase1);
+        const frase2= document.querySelector('h1');
+        typeWrite(frase2);
+      </script>
 </body>
 </html>
