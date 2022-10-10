@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Vestibular</title>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        let texto = 'Venha estudar na FATEC';
+        let textopassou = '';
+        let i = 0;
+        function letreiro() {
+            const element = (<h1>{textopassou = textopassou + texto[i]}</h1>);
+            i++;
+            if (i <= texto.length) {
+                ReactDOM.render(element, document.getElementById('root'));
+            }
+        }
+        setInterval(letreiro, 300);
+    </script>
+    
+    <h1> FATEC PRESIDENTE PRUDENTE-SP</h1>
+    
+    <div class="direction">
+        <h4>EXAME    10/01/2023</h4>
+        
+        <h4>Inscrições: 25/10/2022 à 29/12/2022   (até as 15 horas)</h4>
+    </div>
+    
+    
+    <h2>Classificação em Processo Seletivo – Vestibular. 
+            É realizado em uma única fase, com provas das disciplinas do núcleo comum do ensino médio ou equivalente, 
+            em forma de testes objetivos e uma redação.</h2>
+    
+    <h1>Inscrições pelo site: www.vestibularfatec.com.br</h1>
+    
+    <p>R. Teresina, 75 - Vila Paulo Roberto
+            CEP 19046-230 - Presidente Prudente/SP
+            Telefone: (18) 3916-7887
+            E-mail: f157dir@cps.sp.gov.br
+            Site: www.fatecpp.edu.br</p>
+    
+    <h2>Cursos oferecidos: </h2>
+    
+    <h3>Agronegócio</h3>
+    <p>Noite - 40 vagas </p>
+    <p>Duração: 6 Semestres</p>
+    
+    <h3>Análise e Desenvolvimento de Sistemas</h3>
+    <p>Manhã - 40 vagas</p>
+    <p>Noite - 40 vagas </p>
+    <p>Duração: 6 Semestres</p>
+    
+    <h3>Eventos</h3>
+    <p>Noite - 40 vagas </p>
+    <p>Duração: 6 Semestres</p>
+    
+    <h3>Gestão Empresarial</h3>
+    <p>Noite - 40 vagas</p>
+    <p>EaD - 20 vagas</p>
+    <p>Duração: 6 Semestres</p>
+    
+    <h3>Marketing</h3>
+    <p>Manhã - 40 vagas</p>
+    <p>Duração: 6 Semestres</p>
+    
+    <h3>Produção Agropecuária</h3>
+    <p>Manhã - 40 vagas</p>
+    <p>Duração: 6 Semestres</p>
+        
+</body>
+</html>

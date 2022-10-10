@@ -1,0 +1,32 @@
+body {
+    position: absolute;
+    width: 65%;
+    top: 5%;
+    left: 18%;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    text-align: justify;
+    font-size: 25px;
+}
+h3{
+    font-size: 30px;
+}
+.direction{
+    font-size: 50x;
+    display: flex;
+    flex-direction: row;
+    margin:10%;
+    font-size: 36px;
+}
+h4{
+    margin-left:8%;
+}
